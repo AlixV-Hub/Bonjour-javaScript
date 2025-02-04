@@ -61,8 +61,11 @@
 let firstName= prompt("Coucou petite perruche comment tu t'appelles? :")
 console.log(firstName)
 
-function sayHello(hour){
-    if (hour <= 18){
+let ladate = new Date()
+let heure = ladate.getHours()
+console.log(heure);
+function sayHello(){
+    if (heure <= 18){
     let message = "Bonjour "+ firstName + " !"
     document.querySelector('h1').innerText = message;
     } else { 
@@ -71,4 +74,4 @@ function sayHello(hour){
     }
 }
    
-sayHello(20)
+sayHello()
